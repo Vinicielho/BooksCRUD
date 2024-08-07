@@ -26,7 +26,6 @@ public class PublisherModel implements Serializable {
     @OneToMany(mappedBy = "publisher", fetch = FetchType.LAZY)
     private Set<BookModel> books = new HashSet<>();
 
-
     public UUID getId() {
         return id;
     }
